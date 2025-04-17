@@ -34,10 +34,14 @@ console.log(POKEMONS);
 // EXERCICI 4:
 // Extreure un pokemon aleatori (usant random entre min i max) de la array de l'exercici anterior, buscar-lo dins de la array original i recuperar-lo.
 
-// EXERCICI 5: 
+// EXERCICI 5:
 // Usant destructuring, agafar les propietats del pokemon anterior i mostrar-les per consola.
 
 // EXERCICI 6:
 // Usant fetch, recuperar la informacio del pokemon anterior usant l'endpoint "https://pokeapi.co/api/v2/pokemon/{id}" i mostrar la seva fitxa a index.html.
 
-
+//EXERCICI 1
+const idAndName = POKEMONS.map(function(POKEMON){ // utilitzo .map() per iterar dins de cada pokemon de l'array(POKEMONS) i crear una nova array. Faig una funció que hem retorna només la ID i el Name de l'objecte de l'array.
+  return {id: POKEMON.id, name: POKEMON.name}; // els {} serveixen per fer el destructuring, per entrar a l'objecte i triar només la part que vull. Els : són per dir què té cada caracteristica nova dels objectes a la nova array, en aquest cas id: i name: i els hi assigno un valor POKEMON.id i POKEMON.name perquè vull recuperar els de l'array anterior.
+});
+console.log(idAndName);
