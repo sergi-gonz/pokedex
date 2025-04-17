@@ -53,3 +53,15 @@ console.log(POKEMONS);
 // els de l'array anterior.
 const idAndName = POKEMONS.map(({id, name}) => ({id, name}));
 console.log(idAndName);
+
+//EXERCICI 2 
+const alphabetically = idAndName.sort(function(a, b){ // sort() s'utilitza per ordenar elements dins una array(modifica l'array original) per fer-ho fa servir una funció de comparació per saber com ordenar-los.
+  if (a.name < b.name){                               // alfabeticament la consola enten que A és el més petit i Z el més gran.                                   
+    return -1;                                        // si el valor que retorna és negatiu(falç), a es posa davant de b.
+  }
+  if (a.name > b.name){
+    return 1;                                        // si el valor que retorna és positiu(verdader), b es posa davant de a. 
+  }
+  return 0;                                          // si és 0, l'ordre de a i b és manté igual. 
+});
+console.log(alphabetically);
