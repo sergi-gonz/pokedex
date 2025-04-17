@@ -1,0 +1,33 @@
+
+html, body {
+    height: 100%;   
+    margin: 0;      
+    display: flex;  
+    justify-content: center;  
+    align-items: center;      
+  }
+  
+  #poke-container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    text-align: left;
+    align-content: center;
+    text-transform: uppercase;
+    border: 2px solid black; 
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+
+  .poke-info {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 5px;
+  }
+
+
+
